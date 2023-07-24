@@ -81,7 +81,9 @@ while True:
             next_square = grid[
                 pair[0] : pair[1] + 1, second_pair[0] : second_pair[1] + 1
             ]
-            tmp_square = tmp[pair[0]: pair[1] + 1, second_pair[0] : second_pair[1] + 1]
+            tmp_square = tmp[
+                pair[0]: pair[1] + 1, second_pair[0] : second_pair[1] + 1
+                ]
             a = set(next_square.flatten())
             tmp_square[apply_to_set_elements(tmp_square)] = (
                 tmp_square[apply_to_set_elements(tmp_square)] - a
